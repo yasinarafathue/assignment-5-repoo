@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    
+    <!-- daisyUI CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Lexend Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<style>
+    .lexend-font {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body{
+  margin: 0;
+}
+header{
+    background-color:white;
+    padding: ;
+    position:sticky;
+    top: 0;
+    transition: background-color 0.4s ease-in-out;
+}
+header.scrolled{
+    background-color: black;
+    opacity: 0.8 ;
+}
+header nav{
+    transition: color 0.4s ease-in-out ;
+}
+header.scrolled nav{
+    color: black;
+}
+
+</style>
+
+</head>
+<body class="lexend-font">
+
+
+
+    <header ><!-- nav section -->
+        <section class="h-28 md:h-40  bg-[#F9F7F3]">
+            
+        <nav class=" flex md:p-0 p-4 w-11/12 mx-auto  justify-between " >
+            
+            <!-- btn task -->
+            <button id="blog-button" class="btn md:mt-6 hover:bg-lime-400 bg-[#B4F461]  md:w-[110px] md:h-[49px] md:text-lg text-base font-bold">Blog</button>
+    
+            <!-- img content -->
+            <div class="flex md:mt-6 w-[262px] h-12 text-center items-center" >
+    <img class="md:w-12 md:h-12 w-8  h-8 md:ml-0 ml-3" src="/assets/logo.png" alt="">
+    <h1 class="font-bold md:text-lg  md:ml-3 ml-1">Donate Bangladesh</h1>
+            </div>
+    
+            <!-- icon BDT -->
+            <div class="flex md:mt-7 mt-2 w-[135px] h-7">
+     <img class="md:w-8 md:h-8 w-6 h-6 md:mt-0 mt-1" src="/assets/coin.png" alt="">
+     <span id="totalPrice" class="font-semibold ml-2 md:mt-0 mt-1 md:text-lg">95000 </span>
+     <span class="font-semibold md:ml-2 ml-1 md:text-lg md:mt-0 mt-1">BDT</span>
+            </div>
+    
+        </nav>
+    
+    </section>
+</header>
+
+
+<main>
+
+
+    <!--content section -->
+<section class=" bg-[#FFFFFF]"> 
+    <!-- parent div -->
+    <div id="" class="w-11/12 mx-auto md:mt-20 mt-14 md:w-[1140px] md:h-[1600px] w-[420px] h-[2850px]">
+
+        <!-- button div -->
+<div class="md:text-center md:ml-0 ml-24 ">
+    <button id="show-donation-form" class="md:w-[157px] md:h-14 btn btn-outline border-gray-400 hover:bg-[#B4F461] hover:text-black hover:border-[#B4F461] hover:font-bold">Donation </button>
+
+    <button id="show-history-form" class="md:w-[157px] md:h-14 ml-4 btn btn-outline border-gray-400 hover:bg-[#B4F461] hover:text-black hover:border-[#B4F461] hover:font-bold">History</button>     
+</div>
+
+
+<!-- donation card part -->
+<div id="donation-form">
+    
+
+
+<!-- 1st card option -->
+ 
+<div class="md:flex md:w-[1140px] md:h-[453px] md:mb-0 mb-8 w-[420px] h-[820px] p-8 bg-[#FFFFFF] border  border-slate-100 rounded-lg shadow-xl md:mt-8 mt-8">
+    <img class="md:w-[522px] md:h-[389px] w-[352px] h-[250px]" src="/assets/noakhali.png" alt="">
+
+    <div  class="md:w-[522px] md:h-[389px] w-[352px] h-[220px] md:ml-12 md:mt-0 mt-5">
+
+        <!-- content main div -->
+        <div class="md:w-[522px] md:h-[389px] w-[352px] h-[220px]"> 
+<div class="w-28 h-11 flex border-stone-100 bg-slate-100 rounded-lg items-center "> 
+<img  class="w-6 h-6 ml-3" src="/assets/coin.png" alt="">
+<span id="spn-id" class="ml-2 text-[#111111 ]">0 BDT</span>
+</div>
+
+<h1 class="mt-2 font-bold text-xl title1">Donate for Flood at Noakhali, Bangladesh</h1>
+
+<p class="text-[#111111] font-light mt-2 "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+</div>
+
+
+<!-- btn main div -->
+<div class="md:w-[522px] md:h-[129px] w-[352px] h-[120px] md:mt-[-140px] mt-28">
+
+<input  id="donation-amount1" class="md:w-[522px] w-[350px] h-14 p-4 border border-slate-300 rounded-lg" type="text" name=""  placeholder="Write Donation Amount">
+
+<button id="donate-btn1" class="md:w-[522px] w-[350px] btn hover:bg-[#B4F461] mt-3 h-14 p-4 border border-[#B4F461] bg-[#B4F461] rounded-lg font-bold text-xl" >
+    Donate Now
+</button>
+</div>
+
+
+    </div>
+    
+</div>
+
+
+
+<!-- 2nd card option -->
+
+<div class="md:flex md:w-[1140px] md:h-[453px] md:mb-0 mb-8 w-[420px] h-[880px] p-8 bg-[#FFFFFF] border  border-slate-100 rounded-lg shadow-xl md:mt-8">
+    <img class="md:w-[522px] md:h-[389px] w-[352px] h-[250px]" src="/assets/feni.png" alt="">
+
+    <div  class="md:w-[522px] md:h-[389px] w-[352px] h-[220px] md:ml-12 md:mt-0 mt-5">
+
+        <!-- content main div -->
+        <div class="md:w-[522px] md:h-[389px] w-[352px] h-[220px]"> 
+
+<div class="w-28 h-11 flex border-stone-100 bg-slate-100 rounded-lg items-center "> 
+<img  class="w-6 h-6 ml-3" src="/assets/coin.png" alt="">
+<span id="spn-id2" class=" ml-2 text-[#111111 ]">0 BDT</span>
+</div>
+
+<h1  class="mt-2 font-bold text-xl title2">Donate for Flood Relief in Feni,Bangladesh</h1>
+
+<p class="text-[#111111] font-light mt-2 "> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+</div>
+
+
+<!-- btn main div -->
+<div class="md:w-[522px] md:h-[129px] w-[352px] h-[120px] md:mt-[-115px] mt-48">
+
+<input id="donation-amount2"  class="md:w-[522px] w-[350px] h-14 p-4 border border-slate-300 rounded-lg" type="text" name="" id="" placeholder="Write Donation Amount">
+
+<button id="donate-btn2"  class="md:w-[522px] w-[350px] btn hover:bg-[#B4F461] mt-3 h-14 p-4 border border-[#B4F461] bg-[#B4F461] rounded-lg font-bold text-xl" >
+    Donate Now
+</button>
+</div>
+
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+<!-- 3rd card option -->
+
+<div class="md:flex md:w-[1140px] md:h-[453px] md:mb-0 mb-8 w-[420px] h-[900px] p-8 bg-[#FFFFFF] border  border-slate-100 rounded-lg shadow-xl md:mt-8">
+    <img class="md:w-[522px] md:h-[389px] w-[352px] h-[250px]" src="/assets/quota-protest.png" alt="">
+
+    <div  class="md:w-[522px] md:h-[389px] w-[352px] h-[220px] md:ml-12 md:mt-0 mt-5">
+
+        <!-- content main div -->
+        <div class="md:w-[522px] md:h-[389px] w-[352px] h-[220px]"> 
+
+<div class="w-28 h-11 flex border-stone-100 bg-slate-100 rounded-lg items-center "> 
+<img  class="w-6 h-6 ml-3" src="/assets/coin.png" alt="">
+<span id="spn-id3" class="ml-2 text-[#111111 ]">0 BDT</span>
+</div>
+
+<h1 class="mt-2 title3 font-bold text-xl">Aid for Injured in the Quota Movement</h1>
+
+<p class="text-[#111111] font-light mt-2 ">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+</div>
+
+
+<!-- btn main div -->
+<div class="md:w-[522px] md:h-[129px] w-[352px] h-[120px] md:mt-[-115px] mt-52">
+
+<input id="donation-amount3" class="md:w-[522px] w-[350px] h-14 p-4 border border-slate-300 rounded-lg" type="text" name="" id="" placeholder="Write Donation Amount">
+
+<button id="donate-btn3"  class="md:w-[522px] w-[350px] btn hover:bg-[#B4F461] mt-3 h-14 p-4 border border-[#B4F461] bg-[#B4F461] rounded-lg font-bold text-xl" >
+    Donate Now
+</button>
+</div>
+
+
+    </div>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- history start -->
+
+<div class="hidden" id="history-id">
+    <h1></h1>
+    <div id="history-container">
+<div id="card1"></div>
+<div id="card2"></div>
+<div id="card3"></div>
+
+
+    </div>
+
+
+</div >
+<!-- history end -->
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+<footer class="h-40  bg-[#F9F7F3]">
+
+</footer>
+
+
+
+<script src="js/features.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/sticky.js"></script>
+
+
+<!-- blog script -->
+ <script>
+  const button = document.getElementById("blog-button");
+button.setAttribute("onclick", "move();");
+function move() {
+    window.location.href = "/blog.html";
+}
+
+
+
+// donate first button check
+
+document.getElementById('donate-btn1').addEventListener('click', function() {
+    const donationAmountInput = document.getElementById('donation-amount1');
+    const totalPriceElement = document.getElementById('totalPrice');
+    const currentDonationElement = document.getElementById('spn-id');
+    let currentTotalPrice = parseFloat(totalPriceElement.textContent) || 0;
+    let currentDonation = parseFloat(currentDonationElement.textContent) || 0;
+
+    const donationAmount = parseFloat(donationAmountInput.value);
+
+
+    if (!isNaN(donationAmount) && donationAmount > 0) {
+
+        currentTotalPrice -= donationAmount;
+
+        currentDonation += donationAmount;
+
+        totalPriceElement.textContent = currentTotalPrice.toFixed(2);
+        currentDonationElement.textContent = `${currentDonation.toFixed(2)} BDT`;
+        
+
+        donationAmountInput.value = '';
+    } else {
+        alert('Please enter a valid donation amount ');
+    }
+});
+
+
+
+
+// donate second button check
+
+document.getElementById('donate-btn2').addEventListener('click', function() {
+    const donationAmountInput = document.getElementById('donation-amount2');
+    const totalPriceElement = document.getElementById('totalPrice');
+    const currentDonationElement = document.getElementById('spn-id2');
+    let currentTotalPrice = parseFloat(totalPriceElement.textContent) || 0;
+    let currentDonation = parseFloat(currentDonationElement.textContent) || 0;
+
+    const donationAmount = parseFloat(donationAmountInput.value);
+
+
+    if (!isNaN(donationAmount) && donationAmount > 0) {
+
+        currentTotalPrice -= donationAmount;
+
+        currentDonation += donationAmount;
+
+        totalPriceElement.textContent = currentTotalPrice.toFixed(2);
+        currentDonationElement.textContent = `${currentDonation.toFixed(2)} BDT`;
+        
+
+        donationAmountInput.value = '';
+    } else {
+        alert('Please enter a valid donation amount ');
+    }
+});
+
+
+
+
+
+// donate third button check
+
+document.getElementById('donate-btn3').addEventListener('click', function() {
+    const donationAmountInput = document.getElementById('donation-amount3');
+    const totalPriceElement = document.getElementById('totalPrice');
+    const currentDonationElement = document.getElementById('spn-id3');
+    let currentTotalPrice = parseFloat(totalPriceElement.textContent) || 0;
+    let currentDonation = parseFloat(currentDonationElement.textContent) || 0;
+
+    const donationAmount = parseFloat(donationAmountInput.value);
+
+
+    if (!isNaN(donationAmount) && donationAmount > 0) {
+
+        currentTotalPrice -= donationAmount;
+
+        currentDonation += donationAmount;
+
+        totalPriceElement.textContent = currentTotalPrice.toFixed(2);
+        currentDonationElement.textContent = `${currentDonation.toFixed(2)} BDT`;
+        
+
+        donationAmountInput.value = '';
+    } else {
+        alert('Please enter a valid donation amount ');
+    }
+});
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
